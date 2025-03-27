@@ -11,7 +11,7 @@ void generateSubsets(vector<int>& nums, int index, vector<int>& current, ll& tot
         }
         return;
     }
-    
+    ////好像有点懂了,像树一样延申下去
     // 包含当前元素
     current.push_back(nums[index]);
     generateSubsets(nums, index + 1, current, total);
